@@ -6,7 +6,7 @@ function Logo() {
       <img
         src="/images/Logotipo ilustracao.png"
         alt="Aether Lens Logo"
-        className="h-16 w-auto object-contain transition-transform hover:scale-104 motion-reduce:transition-none sm:h-12 md:h-16 max-[480px]:h-10"
+        className="h-16 w-auto object-contain transition-transform hover:scale-104 motion-reduce:transition-none sm:h-12 md:h-16 max-[480px]:h-12"
         draggable={false}
       />
     </Link>

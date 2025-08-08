@@ -61,9 +61,17 @@ function Home({ busca, setBusca, buscar }) {
   return (
     <div className="w-full min-h-screen flex flex-col items-center">
       <Header busca={busca} setBusca={setBusca} buscar={buscar} />
-      <main className="w-full flex flex-col mx-auto items-center flew-grow">
-        {loading && <p className="text-white text-center text-2xl animate-pulse">Carregando...</p>}
-        {error && <p className="text-red text-center text-2xl animate-pulse">{error}</p>}
+      <main className="w-full flex flex-col mx-auto items-center flex-grow">
+        {loading && (
+          <div className="flex flex-1 items-center justify-center min-h-[50vh]">
+            <p className="text-white text-center text-2xl animate-pulse">Carregando...</p>
+          </div>
+        )}
+        {error && (
+          <div className="flex flex-1 items-center justify-center min-h-[50vh]">
+            <p className="text-red text-center text-2xl animate-pulse">{error}</p>
+          </div>
+        )}
         {!loading && !error && (
           <div>
             <Categoria titulo="Em alta" items={filmesPopulares} />

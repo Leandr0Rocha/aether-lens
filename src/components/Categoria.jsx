@@ -8,9 +8,11 @@ function Categoria({ titulo, items }) {
       <h3 className="text-xl sm:text-lg md:text-2xl font-bold text-white mb-2 font-[Michroma] animate-slideIn max-[480px]:text-base">
         {titulo}
       </h3>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-y-8 gap-x-4 max-[480px]:grid-cols-2 max-[480px]:gap-y-4 max-[480px]:gap-x-2 max-[480px]:px-2">
+      <div className="flex flex-row flex-nowrap gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-cyan-400 py-4">
         {items.map(item => (
-          <Card movie={item} key={item.id} />
+          <div key={item.id} className="min-w-[140px] sm:min-w-[160px] md:min-w-[180px]">
+            <Card movie={item} />
+          </div>
         ))}
       </div>
     </section>

@@ -10,11 +10,11 @@ function Card({ movie }) {
   };
 
   return (
-    <div className="h-auto w-auto relative flex flex-col rounded-sm shadow-lg overflow-hidden transition-transform group hover:scale-102 hover:shadow-2xl m-2 sm:m-1 md:m-2 max-[480px]:m-1 max-[480px]:w-full">
+    <div className="h-auto w-auto relative flex flex-col rounded-sm shadow-lg overflow-hidden transition-transform group hover:scale-102 hover:shadow-2xl m-1 max-[480px]:w-full">
       <img
         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
         alt={`${movie.title} poster`}
-        className="w-full h-auto object-cover object-center sm:max-h-60 md:max-h-none max-[480px]:max-h-48"
+        className="w-full h-auto object-cover object-center sm:max-h-80 md:max-h-none max-[480px]:max-h-60"
         draggable={false}
       />
       <button

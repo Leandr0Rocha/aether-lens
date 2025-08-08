@@ -10,7 +10,7 @@ function Menu() {
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="fixed top-4 left-4 md:top-6 md:left-6 z-50 text-white rounded-full p-2 shadow-lg focus:outline-none"
+        className="fixed top-4 left-4 md:top-6 md:left-6 max-[480px]:top-2 max-[480px]:left-2 z-50 text-white rounded-full p-2 shadow-lg focus:outline-none"
         aria-label="Abrir menu"
       >
         <span className="text-4xl sm:text-3xl text-red font-bold">☰</span>
@@ -24,12 +24,12 @@ function Menu() {
 
       {/* Side menu */}
       <nav
-        className={`fixed top-0 left-0 h-full w-92 sm:w-72 md:w-92 z-50 shadow-lg transform transition-transform duration-300 bg-gray ${open ? 'translate-x-0' : '-translate-x-full'}`}
+        className={`fixed top-0 left-0 h-full w-92 sm:w-72 md:w-92 max-[480px]:w-64 z-50 shadow-lg transform transition-transform duration-300 bg-gray ${open ? 'translate-x-0' : '-translate-x-full'}`}
       >
         <div className="flex flex-col h-full">
           {/* Header com título */}
           <div className="p-4 mb-2 text-center">
-            <h1 className="text-red font-bold text-3xl sm:text-2xl tracking-wider font-[Michroma]">AETHER LENS</h1>
+            <h1 className="text-red font-bold text-3xl sm:text-2xl max-[480px]:text-xl tracking-wider font-[Michroma]">AETHER LENS</h1>
           </div>
 
           {/* Menu items */}
@@ -37,7 +37,7 @@ function Menu() {
             <li>
               <Link
                 to="/"
-                className="block text-white text-2xl sm:text-xl hover:text-cyan px-4 py-2 rounded transition-colors duration-200"
+                className="block text-white text-2xl sm:text-xl max-[480px]:text-xl hover:text-cyan px-4 py-2 rounded transition-colors duration-200"
                 onClick={() => setOpen(false)}
               >
                 Início
@@ -46,7 +46,7 @@ function Menu() {
             <li>
               <Link
                 to="/favoritos"
-                className="block text-white text-2xl sm:text-xl hover:text-cyan px-4 py-2 rounded transition-colors duration-200"
+                className="block text-white text-2xl sm:text-xl max-[480px]:text-xl hover:text-cyan px-4 py-2 rounded transition-colors duration-200"
                 onClick={() => setOpen(false)}
               >
                 Favoritos
