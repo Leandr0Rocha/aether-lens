@@ -66,6 +66,5 @@ Aether Lens é um site de filmes dinâmico que permite aos usuários pesquisar f
 ## 🙏 Créditos
 
   * **The Movie Database (TMDb):** Fornece os dados de filmes usados nesta aplicação.
-  * **Ícones SVG:** Utilizados para redes sociais e interface, disponíveis na pasta `/public/svg`.
 
 Aproveite para descobrir seu próximo filme favorito com Aether Lens.
