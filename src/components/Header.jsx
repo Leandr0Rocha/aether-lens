@@ -13,13 +13,13 @@ function Header({ busca, setBusca, buscar }) {
         <input
           type="text"
           placeholder="Buscar filme..."
-          className="bg-black text-white rounded-l-md p-4 focus:outline-none md:w-64 sm:w-40 shadow hover:bg-gray transition font-[Michroma] max-[480px]:p-2 max-[480px]:text-xs max-[480px]:w-28"
+          className="bg-black text-white rounded-l-md p-4 h-12 focus:outline-none md:w-64 sm:w-40 shadow hover:bg-gray transition font-[Michroma] max-[480px]:p-2 max-[480px]:text-xs max-[480px]:w-28"
           value={busca}
           onChange={(e) => setBusca(e.target.value)}
         />
         <button
           type="submit"
-          className="bg-black text-white rounded-r-md p-4 bold shadow items-center justify-center hover:bg-gray transition max-[480px]:p-2 max-[480px]:text-xs"
+          className="bg-black text-white bold rounded-r-md p-4 h-12 shadow items-center justify-center hover:bg-gray transition max-[480px]:p-2 max-[480px]:text-xs"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <circle cx="11" cy="11" r="7" strokeWidth="2" stroke="currentColor" fill="none" />
