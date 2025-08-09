@@ -4,7 +4,7 @@ function Categoria({ titulo, items }) {
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="w-full max-w-7xl mx-auto mb-12 px-2 sm:px-1 md:px-4 max-[480px]:px-1">
+    <section className="categoria-section w-screen relative left-1/2 right-1/2 -translate-x-1/2 px-4 md:px-8 sm:px-6 py-4 mb-8">
       <h3 className="text-xl sm:text-lg md:text-2xl font-bold text-white mb-2 font-[Michroma] animate-slideIn max-[480px]:text-base">
         {titulo}
       </h3>

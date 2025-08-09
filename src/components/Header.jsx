@@ -3,7 +3,7 @@ import Menu from "./Menu";
 
 function Header({ busca, setBusca, buscar }) {
   return (
-    <header className="w-full h-24 flex flex-1 items-center justify-around p-4 sm:p-2 md:px-6 relative z-40 max-[480px]:h-20 max-[480px]:p-2 mb-2">
+    <header className="w-full h-24 flex flex-1 items-center align-center justify-around p-4 sm:p-2 md:px-6 relative z-40 max-[480px]:h-20 max-[480px]:p-2 mb-2">
       <Menu />
       <Logo />
       <form
